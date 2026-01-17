@@ -87,7 +87,7 @@ spec:
 ## Step 4: Restart Deployment
 
 ```
-kubectl rollout restart deployment private-repo-demo
+kubectl rollout restart deployment Deployment.yaml
 ```
 Expected Result
 
