@@ -16,7 +16,7 @@ This scenario is reproduced on a **local Minikube cluster**.
 
 ---
 
-## Step 1: Create Deployment with WRONG Image Name Deployment given in repo just change image name wrongly 
+## Step 1: Create Deployment with WRONG Image Name, use the Deployment given in repository you can change image name wrongly and follow below steps. 
 
 
 ## Troubleshooting Kubernetes Deployment
@@ -68,7 +68,7 @@ image: inginx:1.14.2
 ```
 Always verify the exact image name and tag on Docker Hub.
 
-## Delete Pod
+Delete Pod
 
 ```
 kubectl delete pod <pod-name>
@@ -87,10 +87,8 @@ Running
 ```
 
 Key Learnings
-Even a small typo in image name causes ImagePullBackOff
-
-Always use explicit image tags
-
-ImagePullBackOff is not always an authentication issue
+- Even a small typo in image name causes ImagePullBackOff
+- Always use explicit image tags
+- ImagePullBackOff is not always an authentication issue
 
 
